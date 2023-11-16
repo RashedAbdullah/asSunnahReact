@@ -1,4 +1,16 @@
 import React from 'react'
+// import React, { Component } from 'react'
+
+// Class component:
+class HeaderClass extends Component {
+  render() {
+    return (
+      <div>HeaderClass</div>
+    )
+  }
+};
+
+
 
 function Header() {
 
