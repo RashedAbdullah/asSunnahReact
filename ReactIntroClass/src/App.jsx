@@ -1,7 +1,7 @@
 
 import './App.css'
 import Counter from './Components/Counter'
-import Header from './Components/Header'
+import Header from './Components/Header/Header'
 
 function App() {
 
