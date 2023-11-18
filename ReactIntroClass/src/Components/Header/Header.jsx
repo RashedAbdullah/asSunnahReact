@@ -1,34 +1,57 @@
-import React from 'react'
+
 import './Header.css';
+
 
 function Header() {
 
+    const alertFunc = (myName)=>{
+        alert("Hello world " + myName);
+    }
+    let marks = 90;
+
+    const arr = ["Rashed", "Faruque", "Irfan", "Noman", "Labib"]
 
   return (
     <div>
-        <header>
 
-    <div class="logo">
-        <p>Rashed Abdullah</p>
-    </div>
+        {/* events */}
+        <button onClick={()=>{
+            alertFunc("Rashed Abdullah");
+        }}>Show alert</button>
+        
+        {/* inline css */}
+        <p style={{textAlign: 'center',
+                    color: "red",
+                    fontSize: "30px"
+        }}>{Date()}</p>
 
-    <input type="checkbox" id='checkbox'/>
-    <label for="checkbox" class="icons">
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <i class="fa-solid fa-xmark" id="close-icon"></i>
-    </label>
+        {/* inline turnery operator */}
+        <div>
+            {marks >= 80? <p>you are success</p>: <p> Your are fail</p>}
+        </div>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a target="_blank" href="https://github.com/RashedAbdullah">Github</a></li>
-            <li><a href="">Linkedin</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
+        {/* inline if else  than we need to IIFE and need also return */}
 
-    </header>
+        <div>
+            {(
+                ()=>{
+                if(marks >= 80 && marks <= 100){
+                    return <p>youre great! {marks}</p>
+                }else if(marks >100){
+                    return <p>This is imposible over: {marks}</p>
+                } else {
+                    return <p>You are right now not a success man! {marks}</p>
+                }
+            }
+            )()}
+        </div>
+
+        {/* map in array, also need return*/}
+        <ol>
+            {arr.map((value, index)=>{
+                return <li key={index}>{value}</li>
+            })}
+        </ol>
     </div>
   )
 }
