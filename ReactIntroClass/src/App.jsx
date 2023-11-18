@@ -1,18 +1,12 @@
 
-import './App.css'
-import Counter from './Components/Counter'
-import Header from './Components/Header/Header'
-import Condition from './Components/LoginLogout/Condition';
+import './App.css';
+import Switch from './Components/Switch/Switch';
 
 function App() {
 
   return (
     <div >
-      <Condition/>
-      <Header/>
-      <div className='flex'>
-        <Counter/>
-      </div>
+      <Switch/>
     </div>
   )
 }
