@@ -1,12 +1,14 @@
 
+
 import './App.css';
-import Switch from './Components/Switch/Switch';
+import Hooks from './Components/Hooks/Hooks';
+import UseStateFucn from './Components/UseState/UseState';
 
 function App() {
 
   return (
     <div >
-      <Switch/>
+      <UseStateFucn />
     </div>
   )
 }
