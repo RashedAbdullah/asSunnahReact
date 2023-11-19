@@ -1,4 +1,6 @@
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Hooks = () => {
 
@@ -20,15 +22,16 @@ const Hooks = () => {
 
     let fname, lname = useRef();
     const inputBtn = ()=>{
-        const value1 = fname.current.value;
-        const value2 = lname.current.value;
+        let value1 = fname.value;
+        let value2 = lname.value;
+        console.log(value1, value2);
 
-        alert(`My name is: ${value1} ${value2}`)
+        alert(`Welcome mister: ${value1} ${value2}`)
     }
     
   return (
     <div>
-        <button onClick={refBtn}>Show ref</button>
+        <button className='bg-warning rounded' onClick={refBtn}>Show ref</button>
         <h3 ref={refferance}></h3>
 
         {/* Without 'current' */}

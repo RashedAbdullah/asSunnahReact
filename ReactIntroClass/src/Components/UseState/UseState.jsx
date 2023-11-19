@@ -7,21 +7,29 @@ const UseStateFucn = () => {
     const increment = ()=>{
         setCount(
             (prevValue)=>{
-                return {
+                console.log(prevValue)
+                const Destruc = {
+                    ...prevValue, // why spread there?
                     a: prevValue.a + 1,
                     b: prevValue.b + 2,
                     c: prevValue.c + 5
-            }
-        })
-    }
-
-    const dicrement = ()=>{
-        if(count.a > 0){
-            setCount(
-                (prevValue)=>{
-                    return {
-                        a: prevValue.a - 1
                 }
+                return Destruc;
+            })
+        }
+        
+        const dicrement = ()=>{
+            if(count.a > 0){
+                setCount(
+                    (prevValue)=>{
+                    console.log(prevValue)
+                    const Destruc = {
+                        ...prevValue, // why spread there?
+                        a: prevValue.a - 1,
+                        b: prevValue.b - 2,
+                        c: prevValue.c - 5
+                    }
+                    return Destruc;
             })
         }
     }
