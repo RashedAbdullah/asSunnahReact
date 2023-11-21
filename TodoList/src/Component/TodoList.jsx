@@ -4,9 +4,12 @@ const TodoList = () => {
 
     const [input, setInput] = useState("");
     const [todos, setTodo] = useState([]);
+    const [isUpdate, getIsUpdate] = useState(false);
+    const [index, getIndex] = useState(0);
+    // const [editInput, getEditInput] = useState();
 
-    const handleInput = (e)=>{
-        setInput(e.target.value);
+    const handleInput = (event)=>{
+        setInput(event.target.value);
     };
     const handleTodo = ()=>{
         if(input !== ""){
@@ -23,6 +26,17 @@ const TodoList = () => {
     const editBtn = (unique)=>{
         const findData = todos.find((value, index)=> index === unique);
         setInput(findData);
+        getIndex(unique);
+        getIsUpdate(true);
+    }
+    const updateTodo = ()=>{
+        if(input !== ""){
+            todos[index] = input;
+            getIsUpdate(false);
+            setInput("");
+        } else {
+            alert("Edit please!");
+        }
     }
     
   return (
@@ -30,8 +44,8 @@ const TodoList = () => {
         <div className="h-auto md:w-1/2 px-2 w-96 bg-white rounded-lg">
             <div className="input_text relative">
                 <input onChange={handleInput} value={input} className="text-sm h-12 w-full my-4 pr-20 md:pr-28 outline-none pl-8" type="text" placeholder="Write a new task"/> 
-                <button onClick={handleTodo} className="add_task text-sm transition-all hover:bg-blue-700 cursor-pointer text-white bg-blue-400 rounded-lg h-10 w-16 md:w-24 absolute right-1 top-[20px]">
-                    Add task
+                <button onClick={isUpdate? updateTodo : handleTodo} className="add_task text-sm transition-all hover:bg-blue-700 cursor-pointer text-white bg-blue-400 rounded-lg h-10 w-16 md:w-24 absolute right-1 top-[20px]">
+                    {isUpdate? "Update":"Add task"}
                 </button> 
                 <i className="absolute top-[27px] text-gray-600 text-xl left-2 fa fa-pencil-square"></i> 
             </div>
