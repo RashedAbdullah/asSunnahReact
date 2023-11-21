@@ -14,7 +14,7 @@ const Countries = () => {
         .then(res => res.json())
         .then(data=>setCountries(data));
     },[]);
-
+    // console.log(countries)
   return (
     <div>
         <div className='countries'>
