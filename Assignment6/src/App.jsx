@@ -5,9 +5,9 @@ import PostData from './Components/Task03/PostData';
 function App() {
   return (
     <div>
-     {/* <Countries /> */}
+     <Countries />
      {/* <Tasbeeh/> */}
-     <PostData />
+     {/* <PostData /> */}
     </div>
   )
 }

@@ -14,12 +14,12 @@ const Countries = () => {
         .then(res => res.json())
         .then(data=>setCountries(data));
     },[]);
-    // console.log(countries)
   return (
     <div>
         <div className='countries'>
         {
             countries.map((country, index)=>{
+
                 return <Country key={index} country={country}/>
             })
         }
