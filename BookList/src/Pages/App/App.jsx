@@ -51,23 +51,23 @@ const App = () => {
 			<div className="main">
 				<div className="form-container">
 					<form
-						className="form-group"
+			className="form-group"
             onSubmit={handleSubmit}
 					>
 						<label>Title</label>
 						<input
-							type="text"
-							className="form-control"
-              required
-              value={title}
-              onChange={(event)=>setTitle(event.target.value)}
+			type="text"
+			className="form-control"
+			required
+			value={title}
+			onChange={(event)=>setTitle(event.target.value)}
 						></input>
 						<br></br>
 						<label>Author</label>
 						<input
-							type="text"
-							className="form-control"
-              required
+			type="text"
+			className="form-control"
+			required
 							value={author}
               onChange={(event)=>setAothor(event.target.value)}
 						></input>
