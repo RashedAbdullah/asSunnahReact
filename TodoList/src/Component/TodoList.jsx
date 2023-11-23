@@ -6,14 +6,13 @@ const TodoList = () => {
     const [todos, setTodo] = useState([]);
     const [isUpdate, getIsUpdate] = useState(false);
     const [index, getIndex] = useState(0);
-    // const [editInput, getEditInput] = useState();
 
     const handleInput = (event)=>{
         setInput(event.target.value);
     };
     const handleTodo = ()=>{
         if(input !== ""){
-            setTodo([...todos, input]);
+            setTodo([input, ...todos]);
             setInput("");
         } else {
             alert("Input somthing!");
@@ -31,7 +30,7 @@ const TodoList = () => {
     }
     const updateTodo = ()=>{
         if(input !== ""){
-            todos[index] = input;
+            todos[index] = input; //Need more knowlage
             getIsUpdate(false);
             setInput("");
         } else {

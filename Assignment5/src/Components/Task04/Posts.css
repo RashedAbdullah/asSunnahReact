@@ -1,0 +1,18 @@
+#mainPostDataDiv{
+ margin: 20px;
+}
+
+#mainPostDataDiv > div {
+    text-align: start;
+    margin-top: 20px;
+    width: 50%;
+}
+
+#PostDetails {
+    /* margin-top: 20px; */
+}
+
+#PostDetails > button{
+    padding: 5px 15px;
+    cursor: pointer;
+}

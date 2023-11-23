@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(228, 255, 255);
+}
+form > h2 {
+    margin-top: 100px;
+    font-size: 40px;
+    color: rgb(0, 78, 78);
+}
+
+form > div > input {
+    width: 400px;
+    height: 30px;
+    font-size: 22px;
+    text-align: start;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    background-color: rgb(132, 254, 254);
+    padding: 20px 10px;
+    border-radius: 8px 0 0 8px;
+}
+
+form > div > input:focus {
+    border: none;
+}
+
+form > div > button {
+    /* height: 30px; */
+    font-size: 22px;
+    background-color: inherit;
+    border: none;
+    background-color: rgb(0, 54, 54);
+    padding: 6px;
+    color: white;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+.ulData {
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    margin-top: 30px;
+}
+
+.ulData > li {
+    font-size: 22px;
+    list-style: none;
+    color: rgb(0, 66, 66);
+
+    display: flex;
+    align-content: center;
+    line-height:1;
+}
+
+li > span {
+    cursor: pointer;
+}
+li > .data2 {
+   margin-left: 5px;
+}
+
+li > .data3 {
+    margin-left: 115px;
+}
+
+li > .data4 {
+    margin-left: 15px;
+}
+
+.nothingtoShow {
+    margin-top: 100px;
+    font-size: 30px;
+    color: rgb(154, 154, 154);
+}
