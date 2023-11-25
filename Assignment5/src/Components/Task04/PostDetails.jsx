@@ -26,7 +26,9 @@ const PostDetails = ({data}) => {
     <div id='PostDetails'>
         <button onClick={seeFullPost}>See details</button>
         <div>
-            {showData.length > 0 && <div>
+            {showData.length > 0
+            &&
+            <div>
                 <p>ID: {id}</p>
                 <p><b>Title</b>: {title}</p>
                 <p><b>Body</b>: {body}</p>

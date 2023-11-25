@@ -1,6 +1,8 @@
 
 import FormData from './FormData/FormData';
 import Tasbeeh from './Tasbeeh/Tasbeeh';
+import FetchData from './FullQuran/FetchData';
+import ApiData from './FetchData/ApiData';
 
 function App() {
 
@@ -8,7 +10,10 @@ function App() {
   return (
     <div>
       {/* <FormData /> */}
-      <Tasbeeh />
+      {/* <Tasbeeh /> */}
+      {/* <FetchData /> */}
+
+      <ApiData />
     </div>
   )
 }
