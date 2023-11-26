@@ -7,9 +7,9 @@ const App = ()=> {
 
   return (
     <div>
-      {/* <TodoList /> */}
+      <TodoList />
 
-      <PostList />
+      {/* <PostList /> */}
 
       {/* <Tasbeeh /> */}
     </div>

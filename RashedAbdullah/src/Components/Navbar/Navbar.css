@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&display=swap');
+@font-face {
+    font-family: JetBrains;
+    src: url('../../assets/Fonts/Jetbrains/JetBrainsMono-Regular.woff2');
+}
+@font-face {
+    font-family: JetBrainsBold;
+    src: url('../../assets/Fonts/Jetbrains/JetBrainsMono-Bold.woff2');
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: JetBrains;
+}
+
+.bgColor {
+    background-color: #002134;
+}
+
+.color {
+    color: white;
+}
+
+.Langs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    position: absolute;
+    right: 50px;
+}
+
+.Langs > div {
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Langs > div > p {
+    margin: 0;
+}
+
+.Langs .en {
+    background-color: #00649e;
+    position: relative;
+    left: 20px;
+}
+.Langs .ar {
+    background-color: #003251;
+}
+.Langs .ar > p {
+    font-family: 'Aref Ruqaa', serif;
+}
+
+#displayNone {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    #displayNone {
+        display: block;
+    }
+    .Langs {
+        position: static;
+    }
+}

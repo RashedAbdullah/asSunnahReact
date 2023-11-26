@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mainHeroDiv {
+    background-color: #012a42;
+    color: white;
+    height: 100vh;
+}
+
+.threeDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.SocialMediaBox {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.sociaBorder {
+    border: 1px solid white;
+    height: 30vh;
+    margin-left: 20px;
+}
+
+.infoBox {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.infoBorder {
+    border: 1px solid white;
+    height: 30vh;
+    /* margin-right: 10px; */
+}
+
+
+.SocialMediaBox ul li {
+    list-style: none;
+    font-size: 22px;
+    /* margin: 10px; */
+}
+.SocialMediaBox ul li a, .infoBox ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.SocialMediaBox ul li div {
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.infoBox ul {
+    padding: 5px;
+}
+
+.SocialMediaBox ul li div:hover {
+    background-color: #001725;
+}
+
+.infoBox ul li {
+    font-size: 18px;
+    padding: 5px 10px 0 0;
+    list-style: none;
+}
+
+.infoBox ul li a div {
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+.infoBox ul li a div:hover {
+    background-color: #001725;
+    border-radius: 5px;
+}
