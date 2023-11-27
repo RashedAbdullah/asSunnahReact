@@ -15,5 +15,5 @@ function App() {
     </div>
   )
 }
-// (property) JSX.IntrinsicElements.p: React.DetailedHTMLProps<React.HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>
-export default App
+
+export default App;
