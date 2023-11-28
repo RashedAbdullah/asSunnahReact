@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@700&display=swap');
+
+.timeDiv {
+    text-align: center;
+    font-family: 'Noto Serif Bengali', serif;
+    font-size: 22px;
+}
+
+.timeBtn {
+    background-color: rgb(0, 23, 23);
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 5px 100px;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: 'Noto Serif Bengali', serif;
+}

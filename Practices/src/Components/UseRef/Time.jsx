@@ -2,7 +2,6 @@ import React from 'react'
 import { useRef } from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import './Time.css';
 
 const Time = () => {
     const [time, setTime] = useState(new Date());
@@ -40,14 +39,10 @@ const Time = () => {
 
 
   return (
-    <div className='timeDiv'>
+    <div>
         <p>{unStopTime}</p>
         <p>{time.toLocaleTimeString("bn")}</p>
-        {hideBtn
-        ?
-        <button className='timeBtn' onClick={startBtn}>Start time</button>
-        :
-        <button className='timeBtn' onClick={stopBtn}>Stop time</button>}
+        {hideBtn ? <button onClick={startBtn}>Start</button> : <button onClick={stopBtn}>Stop</button>}
     </div>
   )
 }
