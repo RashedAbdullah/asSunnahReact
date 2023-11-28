@@ -5,6 +5,8 @@ import { useState } from 'react';
 
 const MultipleInput = () => {
 
+    const [fulldata, setFulldata] = useState([]);
+
     const [details, setDetails] = useState({
         name: "",
         gmail: "",
@@ -20,17 +22,20 @@ const MultipleInput = () => {
         });
     }
 
-    const keys = [];
-    const values = [];
-    for(let key in details){
-    keys.push(key);
-    values.push(details[key]);
-    }
+    // const keys = [];
+    // const values = [];
+    // for(let key in details){
+    // keys.push(key);
+    // values.push(details[key]);
+    // }
     
     
     const handleformSubmit = (e)=>{
         e.preventDefault();
+        setFulldata([...fulldata, details]);
+        // details.name = ``;
     }
+
 
 
     
@@ -44,6 +49,16 @@ const MultipleInput = () => {
             
             <button>Submit</button>
         </form>
+
+        {
+            fulldata.map((value, index)=>(
+                <div key={index}>
+                    <p>Name: {value.name}</p>
+                    <p>Email: {value.gmail}</p>
+                    <p>Address: {value.address}</p>
+                </div>
+            ))
+        }
 
     </div>
   )
