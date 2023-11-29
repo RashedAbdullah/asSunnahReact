@@ -9,6 +9,8 @@ import Time from './UseRef/Time';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import MultipleInput from './MultipleInput/MultipleInput';
+import Parent from './Children/Parent';
+import MultipleRef from './UseRef/MultipleRef';
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
 
   return (
     <div>
+
       {/* <FormData /> */}
       {/* <Tasbeeh /> */}
       {/* <FetchData /> */}
@@ -24,8 +27,9 @@ function App() {
       {/* <Tasbeehcount /> */}
       {/* <UseRef /> */}
       {/* <Time /> */}
-      
-      <MultipleInput />
+      {/* <MultipleInput /> */}
+      {/* <Parent /> */}
+      <MultipleRef />
       
     </div>
   )

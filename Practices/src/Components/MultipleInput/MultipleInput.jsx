@@ -33,10 +33,11 @@ const MultipleInput = () => {
     const handleformSubmit = (e)=>{
         e.preventDefault();
         setFulldata([...fulldata, details]);
-        // details.name = ``;
+        localStorage.setItem("PersonData", JSON.stringify(fulldata));
     }
+    
 
-
+    document.cookie = "name=labibirfan";
 
     
   return (
