@@ -31,10 +31,10 @@ const Hero1 = () => {
             <div className='infoBox'>
                 <div className="infoBorder"></div>
                 <ul>
-                    <li><a href=""><div><ImHome /> Home</div></a></li>
-                    <li><a href=""><div><FaCode /> Projects</div></a></li>
-                    <li><a href=""><div><IoDocumentText /> Blogs</div></a></li>
-                    <li><a href=""><div><FaUser /> About me</div></a></li>
+                    <li><a href=""><div><ImHome /></div></a></li>
+                    <li><a href=""><div><FaCode /></div></a></li>
+                    <li><a href=""><div><IoDocumentText /></div></a></li>
+                    <li><a href=""><div><FaUser /></div></a></li>
                 </ul>
             </div>
 
