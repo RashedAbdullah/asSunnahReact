@@ -7,6 +7,7 @@ import Blog from './Components/Blog';
 import Projects from './Components/Projects';
 import Menu from './Components/Menu';
 import Routs from './Components/Routes/Routs';
+import MenuPage from './Components/Routes/MenuPage';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         </Routes>
       </HashRouter> */}
 
+      {/* <MenuPage /> */}
       <Routs />
     </div>
   )
