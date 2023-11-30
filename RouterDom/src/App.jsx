@@ -6,6 +6,7 @@ import About from './Components/About';
 import Blog from './Components/Blog';
 import Projects from './Components/Projects';
 import Menu from './Components/Menu';
+import Routs from './Components/Routes/Routs';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <div>
-      <HashRouter>
+      {/* <HashRouter>
       <Menu/>
         <Routes>
           <Route path='/' element={<Home />}/>
@@ -22,7 +23,9 @@ function App() {
           <Route path='/project' element={<Projects />}/>
           <Route path='*' element={<NotFound />}/>
         </Routes>
-      </HashRouter>
+      </HashRouter> */}
+
+      <Routs />
     </div>
   )
 }

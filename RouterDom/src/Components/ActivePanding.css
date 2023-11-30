@@ -10,6 +10,7 @@ li {
     color: white;
     font-size: 22px;
     text-decoration: none;
+    padding: 5px;
 }
 
 .pending {
@@ -17,8 +18,9 @@ li {
     color: aqua;
     font-size: 22px;
     text-decoration: none;
+    padding: 5px;
 }
 
-body {
+/* body {
     background-color: #1d2126;
-}
+} */

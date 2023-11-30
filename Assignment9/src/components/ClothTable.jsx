@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { VscEmptyWindow } from "react-icons/vsc";
 
 
 const ClothTable = ({allData, setAllData}) => {
@@ -11,13 +12,13 @@ const ClothTable = ({allData, setAllData}) => {
     }
 
   return (
-    <div>
+    <div className='outsiteTable'>
         {
           allData.length > 0
           ?
-          <div>
+          <div className='TableDiv'>
             <table>
-          <tbody>
+            <tbody>
             <tr>
                 <th>ID</th>
                 <th>Name</th>
@@ -38,16 +39,19 @@ const ClothTable = ({allData, setAllData}) => {
                 <td>{cloth.fav_color}</td>
                 <td>{cloth.colors}</td>
                 <td>{cloth.description}</td>
-                <td onClick={()=>deleteSingleData(ind)}><AiOutlineCloseCircle /></td>
+                <td onClick={()=>deleteSingleData(ind)} className='dltBtn'><AiOutlineCloseCircle /></td>
             </tr>
               ))
             }
-          </tbody>
-        </table>
-          <div><button onClick={()=>{setAllData([])}}>CLear all data</button></div>
-        </div>
-        :
-        <div>No item added yet!</div>
+            </tbody>
+            </table>
+            <div className='allDataClear'><button onClick={()=>{setAllData([])}}>CLear all data</button></div>
+          </div>
+          :
+          <div className='noItem'>
+            <h2><VscEmptyWindow /></h2>
+            <p>No item added yet!</p>
+          </div>
         }
     </div>
   )

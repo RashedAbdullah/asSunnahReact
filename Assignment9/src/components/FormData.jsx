@@ -48,21 +48,21 @@ const FormData = () => {
             <div className="sameSizeInput">Id: <input min={1} required type="number" name='clothID' placeholder="Enter cloth id"/></div>
             <div className="sameSizeInput">Name: <input required type="text" name='clothName' placeholder="Enter cloth name"/></div>
             <div className="sameSizeInput">Price<input min={1} required type="number" name='clothPrice' placeholder="Enter price"/></div>
-            <div className="sameSizeInput">Quantity<input min={1} max={8} required type="number" name='clothQuantity' placeholder="Enter quantity"/></div>
-            <div className="sameSizeInput">Color: <select name="colors" id="">
+            <div className="sameSizeInput">Quantity<input min={1} max={99} required type="number" name='clothQuantity' placeholder="Enter quantity"/></div>
+            <div className="sameSizeInput">Color: <select name="colors">
                 <option>Red</option>
                 <option>Green</option>
                 <option>Blue</option>
                 </select>
             </div>
             <div className="sameSizeInput">Size:
-                <label htmlFor="radio"><input value="XL" name='fav_color' id='radio' type="radio" />XL</label>
-                <label htmlFor="radio"><input value="M" name='fav_color' id='radio' type="radio" />M</label>
-                <label htmlFor="radio"><input value="L" name='fav_color' id='radio' type="radio" />L</label>
+                <label className="sizeMarging" htmlFor="radio1"><input value="XL" name='fav_color' id='radio1' type="radio" />XL</label>
+                <label htmlFor="radio2"><input value="M" name='fav_color' id='radio2' type="radio" />M</label>
+                <label htmlFor="radio3"><input value="L" name='fav_color' id='radio3' type="radio" />L</label>
             </div>
             <div className="sameSizeInput">Description: <textarea maxLength="20" name="description" id="" cols="30" rows="1" placeholder="Enter your comment briefly"></textarea></div>
-            <div><label htmlFor="terms"><input required id='terms' type="checkbox" />Term and condition</label></div>
-            <button>Submit</button>
+            <div className="terms"><input required id='terms' type="checkbox" /><label htmlFor="terms">Term and condition</label></div>
+            <button className="submitBtn">Submit</button>
         </form>
         <ClothTable allData={allData} setAllData={setAllData} />
     </div>
