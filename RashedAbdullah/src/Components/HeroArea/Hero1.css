@@ -1,80 +1,83 @@
+/* font-family: 'M PLUS Code Latin', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;300;400&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 .mainHeroDiv {
-    background-color: #012a42;
     color: white;
     height: 100vh;
+    font-family: 'M PLUS Code Latin', monospace;
+    background-color: #121212;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #444cf7, #121212), repeating-radial-gradient(circle at center center, #444cf7, #444cf7, 4px, transparent 8px, transparent 4px);
+    background-blend-mode: multiply;
 }
 
 .threeDiv {
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-}
-
-.SocialMediaBox {
-    display: flex;
-    height: 100vh;
+    justify-content: center;
     align-items: center;
 }
 
-.sociaBorder {
-    border: 1px solid white;
-    height: 30vh;
-    margin-left: 20px;
-}
-
-.infoBox {
+.centerHeroArea{
     display: flex;
-    height: 100vh;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    width: 90%;
 }
 
-.infoBorder {
-    border: 1px solid white;
-    height: 30vh;
-    /* margin-right: 10px; */
+.centerHeroArea > div > h2 {
+    font-size: 2rem;
 }
 
-
-.SocialMediaBox ul li {
-    list-style: none;
-    font-size: 22px;
-    /* margin: 10px; */
-}
-.SocialMediaBox ul li a, .infoBox ul li a {
-    text-decoration: none;
-    color: white;
+.centerHeroArea > div > h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-.SocialMediaBox ul li div {
-    padding: 5px 10px;
-    border-radius: 50%;
+.centerHeroArea div h2 span, .centerHeroArea  div p span{
+    color: aqua;
+}
+
+.heroPara p {
+    width: 40vw;
+    font-size: 1.2rem;
+}
+
+.resumeDownload {
+    margin-top: 10px;
+}
+
+.resumeDownload div span {
+    color: aqua;
+    padding-right: 5px;
     transition: 0.5s;
 }
 
-.infoBox ul {
-    padding: 5px;
-}
-
-.SocialMediaBox ul li div:hover {
-    background-color: #001725;
-}
-
-.infoBox ul li {
-    font-size: 18px;
-    padding: 5px 10px 0 0;
-    list-style: none;
-}
-
-.infoBox ul li a div {
-    padding: 5px 10px;
-    transition: 0.5s;
-}
-
-.infoBox ul li a div:hover {
-    background-color: #001725;
+.resumeDownload div {
+    font-size: 1.3rem;
+    width: 180px;
+    padding: 5px 15px;
     border-radius: 5px;
+    border: 1px solid aqua;
+    cursor: pointer;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.resumeDownload div:hover {
+    background-color: aqua;
+    color: #121212;
+}
+
+@media (max-width: 700px) {
+    .SocialMediaBox {
+        display: none;
+    }
 }

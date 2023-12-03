@@ -1,0 +1,19 @@
+/* font-family: 'M PLUS Code Latin', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;300;400&display=swap');
+
+
+.mainContactBoxD {
+    background-color: #ffffff;
+    opacity: 1;
+    background-size: 5px 5px;
+    background-image: repeating-linear-gradient(45deg, #121212 0, #121212 0.5px, #151515 0, #110303 50%);
+    font-family: 'M PLUS Code Latin', monospace;
+    color: white;
+}
+
+.formAndConcatBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}

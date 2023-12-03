@@ -1,0 +1,94 @@
+/* font-family: 'M PLUS Code Latin', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: black;
+    background-color: white;
+}
+
+.footerMainDiv {
+    background-color: #010A16;
+}
+
+footer {
+    background: rgb(0,0,0);
+    background: linear-gradient(200deg, #000, #111111 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.108);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerNavLinks > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 18px;
+    margin: 0;
+}
+
+.footerNavLinks > ul > li {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.749);
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-family: 'M PLUS Code Latin', monospace;
+}
+
+.footerNavLinks > ul > li:hover {
+    background-color: rgba(240, 248, 255, 0.072);
+}
+
+.footerSocialLinks > ul {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0;
+}
+
+.footerSocialLinks > ul > li {
+    list-style: none;
+}
+
+.footerSocialLinks > ul > li > a {
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.footerSocialLinks > ul > li > a:hover {
+    color: aqua;
+}
+
+footer > .subFooter {
+    background-color: #000;
+    height: 50px;
+    font-family: 'M PLUS Code Latin', monospace;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subFooter > p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.638);
+    margin: 0;
+    font-size: 13px;
+    font-weight: 200;
+}

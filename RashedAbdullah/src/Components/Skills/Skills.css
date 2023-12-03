@@ -1,0 +1,50 @@
+/* font-family: 'M PLUS Code Latin', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;300;400&display=swap');
+
+
+.skillsMainDiv {
+    background-color: #212121;
+    font-family: 'M PLUS Code Latin', monospace;
+    color: white;
+}
+
+.skillsHeadDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsHeadDiv h2 {
+    margin: 0;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+.skillsItemsDiv {
+    padding: 20px;
+    background-color: rgb(0, 31, 31);
+    border-radius: 30px;
+}
+
+.React-js p {
+    margin: 0;
+}
+
+.React-js .bgColor{
+    height: 8px;
+    width: 100%;
+    background-color: #555555;
+    border-radius: 10px;
+}
+
+.bgColor .mainColor {
+    height: 100%;
+    width: 60%;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.mainColor2 {
+    width: 50%;
+}
