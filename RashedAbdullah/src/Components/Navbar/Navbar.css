@@ -70,7 +70,7 @@ ul {
     transition: 0.5s;
 }
 
-.navigations > ul > li > a:hover {
+.navigations > ul > li > a:hover, .active {
     background-color: rgb(0, 59, 59);
 }
 

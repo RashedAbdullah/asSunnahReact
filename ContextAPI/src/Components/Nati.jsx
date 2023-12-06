@@ -7,6 +7,7 @@ const Nati = () => {
     <div style={{textAlign: "center"}}>
       <p>{count}</p>
       <button style={{height: "40px"}} onClick={()=>setCount(count + 1)}>increment</button>
+      <button onClick={()=>setCount(0)}>Reset</button>
     </div>
   )
 }

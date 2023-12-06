@@ -4,18 +4,20 @@ import Footer from './Components/Footer/Footer';
 import Skills from "./Components/Skills/Skills";
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Cotacts/Contact';
+import About from './Components/About/About';
 
 function App() {
 
 
   return (
     <div>
-    <Header />
-    <Hero1 />
-    <Contact />
-    <Skills />
-    <Projects />
-    <Footer />
+      <Header />
+      <Hero1 />
+      <Projects />
+      <Contact />
+      <Skills />
+      <About />
+      <Footer />
     </div>
   )
 }

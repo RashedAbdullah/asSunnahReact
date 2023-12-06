@@ -2,18 +2,137 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;300;400&display=swap');
 
 
-.mainContactBoxD {
+.mainContactBox {
     background-color: #ffffff;
     opacity: 1;
     background-size: 5px 5px;
     background-image: repeating-linear-gradient(45deg, #121212 0, #121212 0.5px, #151515 0, #110303 50%);
     font-family: 'M PLUS Code Latin', monospace;
     color: white;
+    height: 110vh;
 }
 
 .formAndConcatBox {
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+}
+
+.contactHeadline {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 70px;
+}
+
+.formbox {
+    background-color: #000000;
+    opacity: 1;
+    background-size: 4px 4px;
+    background-image: repeating-linear-gradient(45deg, #000000 0, #171717 0.4px, #000000 0, #363636 50%);
+    width: 400px;
+    padding: 4vw;
+}
+
+.formbox input {
+    background-color: transparent;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 10px;
+    color: white;
+    font-family: 'M PLUS Code Latin', monospace;
+    font-size: 1rem;
+    width: 90%;
+    transition: 0.3s;
+
+    
+}
+
+.formbox input:focus {
+    border-bottom: 1px solid aqua;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.formbox span {
+    color: #00ffff;
+    font-size: 20px;
+}
+
+.formbox textarea {
+    width: 100%;
+    resize: none;
+    background-color: #252525;
+    opacity: 1;
+    background-size: 4px 4px;
+    background-image: repeating-linear-gradient(45deg, #000000 0, #121212 0.4px, #252525 0, rgba(0, 45, 45, 0.275) 50%);
+    color: white;
+    font-size: 18px;
+    font-family: 'M PLUS Code Latin', monospace;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.formbox .msgBox {
+    margin: 5px 0 2px 0;
+}
+
+.formbox div button {
+    width: 100%;
+    height: 28px;
+    cursor: pointer;
+    background-color: rgb(0, 59, 59);
+    color: white;
+    border: none;
+    outline: none;
+    font-family: 'M PLUS Code Latin', monospace;
+    font-size: 18px;
+}
+
+
+.ContactBox {
+    background-color: #252525;
+    opacity: 1;
+    background-size: 4px 4px;
+    background-image: repeating-linear-gradient(45deg, #121212 0, #121212 0.4px, #1b1515 0, #252525 50%);
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 400px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.ContactBox:hover {
+    background-color: #000000;
+    opacity: 1;
+    background-size: 4px 4px;
+    background-image: repeating-linear-gradient(45deg, #000000 0, #171717 0.4px, #000000 0, #363636 50%);
+}
+
+.ContactBox span {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.mail p {
+    display: flex;
+    cursor: pointer;
+}
+
+
+@media (max-width: 100px) {
+    .formAndConcatBox {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

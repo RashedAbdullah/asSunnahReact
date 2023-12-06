@@ -13,18 +13,19 @@ const Time = () => {
       setInterval(() => {
         setUnStopTime(new Date().toLocaleTimeString())
       }, 1000);
-    },[])
+    },[]);
 
     const timeRef = useRef(null);
 
     useEffect(()=>{
         timeRef.current = setInterval(() => {
-            setTime(new Date())
+            setTime(new Date());
         }, 1000);
+        console.log("useEffect");
         return ()=>{ // Need more knowledge about return in useEffect.
             clearInterval(timeRef.current);
         }
-    },[])
+    },[]);
     
     const stopBtn = ()=>{
         clearInterval(timeRef.current)
@@ -36,7 +37,7 @@ const Time = () => {
             setTime(new Date())
         }, 1000);
         setHidebtn(false);
-    }
+    };
 
 
   return (

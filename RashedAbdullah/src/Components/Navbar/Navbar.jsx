@@ -1,5 +1,6 @@
 import { IoIosSunny } from "react-icons/io";
 import './Navbar.css';
+import { NavLink } from "react-router-dom";
 
 
 function Header() {
@@ -11,11 +12,11 @@ function Header() {
         </div>
         <div className="navigations">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Blogs</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">About</a></li>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/project">Projects</NavLink></li>
+            <li><NavLink to="/blog">Blogs</NavLink></li>
+            <li><NavLink to="/contact">Contact</NavLink></li>
+            <li><NavLink to="/about">About</NavLink></li>
           </ul>
         </div>
         <div className="LangsAndDarkMode">

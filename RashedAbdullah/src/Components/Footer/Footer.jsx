@@ -4,6 +4,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
+import { NavLink } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -20,11 +21,11 @@ const Footer = () => {
             </div>
             <div className='footerNavLinks'>
                 <ul>
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>Blogs</li>
-                    <li>Contact</li>
-                    <li>About</li>
+                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/project">Projects</NavLink></li>
+                    <li><NavLink to="/blog">Blogs</NavLink></li>
+                    <li><NavLink to="/contact">Contact</NavLink></li>
+                    <li><NavLink to="/about">About</NavLink></li>
                 </ul>
             </div>
             <div className='subFooter'>
