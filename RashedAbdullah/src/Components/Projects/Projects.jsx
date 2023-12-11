@@ -7,9 +7,9 @@ import CodeImg from '../../assets/Img/codeimg.png'
 const Projects = () => {
   return (
     <div className='projectsMainDiv1'>
-        <div className='projectHead'><h2>Projects</h2></div>
+        <div className='projectHead animate__animated animate__flipInX'><h2>Projects</h2></div>
         <div className='projectsMainDiv2'>
-            <div className='ProjectCard'>
+            <div className='ProjectCard animate__animated animate__fadeInUp'>
                 <div className='projectsImgBox'>
                     <img src={CodeImg} alt="" />
                 </div>
@@ -27,7 +27,7 @@ const Projects = () => {
                     <p><a href=""><FaLink /></a></p>
                 </div>
             </div>
-            <div className='ProjectCard'>
+            <div className='ProjectCard animate__animated animate__fadeInUp'>
                 <div className='projectsImgBox'>
                     <img src={CodeImg} alt="" />
                 </div>
@@ -45,7 +45,7 @@ const Projects = () => {
                     <p><a href=""><FaLink /></a></p>
                 </div>
             </div>
-            <div className='ProjectCard'>
+            <div className='ProjectCard animate__animated animate__fadeInUp'>
                 <div className='projectsImgBox'>
                     <img src={CodeImg} alt="" />
                 </div>
@@ -63,7 +63,7 @@ const Projects = () => {
                     <p><a href=""><FaLink /></a></p>
                 </div>
             </div>
-            <div className='ProjectCard'>
+            <div className='ProjectCard animate__animated animate__fadeInUp'>
                 <div className='projectsImgBox'>
                     <img src={CodeImg} alt="" />
                 </div>
@@ -81,7 +81,7 @@ const Projects = () => {
                     <p><a href=""><FaLink /></a></p>
                 </div>
             </div>
-            <div className='ProjectCard'>
+            <div className='ProjectCard animate__animated animate__fadeInUp'>
                 <div className='projectsImgBox'>
                     <img src={CodeImg} alt="" />
                 </div>
@@ -99,7 +99,7 @@ const Projects = () => {
                     <p><a href=""><FaLink /></a></p>
                 </div>
             </div>
-            <div className='ProjectCard'>
+            <div className='ProjectCard animate__animated animate__fadeInUp'>
                 <div className='projectsImgBox'>
                     <img src={CodeImg} alt="" />
                 </div>

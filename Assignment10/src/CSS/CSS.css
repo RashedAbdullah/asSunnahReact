@@ -1,0 +1,141 @@
+/* font-family: 'M PLUS Code Latin', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Code Latin', monospace;
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+body {
+    background-color: #ffffff;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 4px ), repeating-linear-gradient( #e9e9e955, #e9e9e9 );
+    height: 100vh;
+}
+
+.titleAndForm {
+    text-align: center;
+}
+
+.titleOnly {
+    font-size: 25px;
+    padding: 10px 0;
+    color: rgb(0, 49, 49);
+}
+
+.formBox > input {
+    background-color: transparent;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid rgb(0, 103, 103);
+    outline: none;
+    width: 300px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.formBox > input:focus {
+    border-bottom: 1px solid green;
+}
+
+.formBox > button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0, 60, 60);
+    color: white;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.formBox > button:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.emptyTaskBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.275);
+}
+
+.inputBoxAndMark {
+    font-size: 20px;
+    text-align: start;
+    margin: auto;
+    width: 300px;
+
+}
+
+.inputBoxAndMark input {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.buttonBox {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonBox > button {
+    color: rgb(0, 57, 57);
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    margin-inline: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttonBox > button:hover {
+    color: rgb(0, 157, 157);
+}
+
+.inputAndEditDelete {
+    display: flex;
+    
+    margin-top: 5px;
+    border-bottom: 1px solid rgb(0, 53, 53);
+    background-color: rgba(0, 0, 0, 0.131);
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.clearDataBox button {
+    width: 400px;
+    cursor: pointer;
+    background-color: rgb(0, 53, 53);
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 5px 0;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.clearDataBox button:hover {
+    background-color: rgb(0, 124, 124);
+}
+
+.editInput {
+    width: 260px;
+    font-size: 18px;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(0, 126, 126);
+}

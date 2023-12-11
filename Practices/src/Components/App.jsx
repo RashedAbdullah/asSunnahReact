@@ -15,6 +15,7 @@ import UseReduce from './useReduce/UseReduce';
 import Reduces from './useReduce/Reduces';
 import Context from './Contexts/Context';
 import ReducePractice from './ReducePractice/ReducePractice';
+import Game from './Tic-tac/tikTac';
 
 function App() {
 
@@ -37,8 +38,9 @@ function App() {
       {/* <UseReduce /> */}
       {/* <Reduces /> */}
       {/* <Context /> */}
+      {/* <ReducePractice /> */}
 
-      <ReducePractice />
+      <Game />
     </div>
   )
 }

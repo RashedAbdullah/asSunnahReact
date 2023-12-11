@@ -15,11 +15,11 @@ const Contact = () => {
     <div className='mainContactBox'>
       <div>
         <div className="contactHeadline">
-          <h3>Let's Talk</h3>
+          <h3 className='projectHead animate__animated animate__flipInX'>Let's Talk</h3>
         </div>
         <div className="formAndConcatBox">
 
-            <div className="formbox">
+            <div className="formbox animate__animated animate__fadeInUp">
                 <form action="">
                     <div><span><FaRegUser /></span><input type="text" placeholder='Your name'/></div>
                     <div><span><MdOutlineEmail /></span><input type="email" placeholder='Your email'/></div>
@@ -30,7 +30,7 @@ const Contact = () => {
                 </form>
             </div>
 
-            <div className="ContactBox">
+            <div className="ContactBox animate__animated animate__fadeInUp">
 
                 <div><p>i'm open for any suggestion or just to have a chat</p></div>
                 <div className="address">

@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { RouterProvider } from 'react-router-dom';
-import RoutingPage from './Routs/Routes';
+import App from './App.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    
-  </React.StrictMode>
+    <App />
+  </React.StrictMode>,
 )
