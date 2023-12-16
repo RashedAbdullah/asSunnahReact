@@ -1,0 +1,39 @@
+{
+    "fname": "Abdul Ahad",
+    "lname": "Rashed",
+    "home": "Home",
+    "projects": "Projects",
+    "blogs": "Blogs",
+    "contact": "Contact",
+    "about": "About",
+    "frontend": "Fron-end developer",
+    "resume": "Resume",
+    "aboutmeInhome1": "Passionate front-end developer with a flair for creating immersive and user-centric web experiences. Proficient in ",
+    "aboutmeInhome2": ". Dedicated to crafting visually appealing and responsive websites that captivate audiences.",
+    "and": " and ",
+    "react": "React.js",
+    "js": "JavaScript",
+
+    "projectTitle": "Project title",
+    "projectDesc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor eius reprehenderit vel eum explicabo optio officiis assumenda commodi provident",
+
+    "talk": "Let's Talk",
+    "palcename": "Your name",
+    "placeMail": "Your email",
+    "placePhone": "Phone number",
+    "msg": " Message",
+    "suggestion": "i'm open for any suggestion or just to have a chat",
+    "address": " Feni, Bangladesh",
+    "mail": "abdulahad4rashed@gmail.com",
+    "phone": "+8801603443214",
+    "website": "rashedabdullah.com",
+    "submit": "Submit",
+
+    "subFooter": "Copyright ©2023 reserved by Rashed Abdullah",
+
+    "aboutMe": "About me",
+    "underAbout": "Greetings! I'm Abdul Ahad Rashed, a passionate frontend developer with a keen focus on creating engaging and responsive web experiences. I specialize in crafting dynamic user interfaces using",
+    "whoIAm": "Who Am I ?",
+    "underWhoIam": "I am not just a coder; I am a storyteller who weaves narratives through lines of code. With a background in both creativity and technology, I merge design aesthetics with functionality to bring digital visions to life.",
+    "knowMoreBtn": "Know more"
+}

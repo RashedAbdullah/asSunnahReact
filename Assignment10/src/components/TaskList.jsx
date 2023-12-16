@@ -20,7 +20,7 @@ const TaskList = ({ taskItem }) => {
 
   const editTask = (id)=>{
     const findedValue = allTasks.find(forEdit=> forEdit.id === id);
-    setIsEdit(true)
+    setIsEdit(true);
     setUpdate(findedValue.task);
   }
   

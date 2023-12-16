@@ -1,11 +1,19 @@
 /* font-family: 'M PLUS Code Latin', monospace; */
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;300;400&display=swap');
 
+/* font-family: 'Cairo', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     
+}
+
+.arabicFont .mainHeroDiv{
+    font-family: 'Aref Ruqaa', serif;
+    font-family: 'Cairo', sans-serif;
 }
 .mainHeroDiv {
     color: white;
@@ -30,6 +38,14 @@
     align-items: center;
     text-align: center;
     width: 90%;
+}
+
+.arabicFont .centerHeroArea {
+    direction: rtl;
+}
+
+.arabicFont .resumeDownload {
+    direction: ltr;
 }
 
 .centerHeroArea > div > h2 {

@@ -10,6 +10,14 @@
     box-sizing: border-box;
 }
 
+.arabicFont .MainNavbarDiv{
+    font-family: 'Aref Ruqaa', serif;
+}
+
+.arabicFont .navigations > ul {
+    direction: rtl;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -34,6 +42,7 @@ ul {
 
 .MainNavbarDiv header {
     width: 90%;
+    height: 50px;
     padding: 0 50px;
     border-radius: 20px;
     background-color: #121212;
@@ -62,6 +71,7 @@ ul {
     margin: 0;
 }
 
+
 .navigations > ul > li > a {
     color: white;
     text-decoration: none;
@@ -82,47 +92,62 @@ ul {
     gap: 1.9vw;
 }
 
-.LangsAndDarkMode > .Languages {
+.Languages {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    background-color: rgb(0, 67, 67);
-    padding: 0.6vw 0;
 }
-/* .Languages > div {
-} */
-.Languages > div > a {
-    padding: 0 10px;
+
+
+.Languages div button {
+    background-color: transparent;
+    border: none;
     color: white;
-    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.4s;
 }
 
-.Languages > .english > a {
-    background-color: rgb(0, 139, 139);
-    padding: 0.8vw;
-    font-size: 17px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+.Languages div button:hover {
+    background-color: rgb(0, 174, 174);
 }
 
-.Languages > .arabic > a {
-    font-size: 17px;
+.Languages > .arabic button{
     font-family: 'Aref Ruqaa', serif;
-    /* padding: 0.5vw; */
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    height: 40px;
+    width: 80px;
+    background-color: rgb(0, 64, 64);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
+
+.arabicFont .Languages > .arabic button {
+    background-color: rgb(0, 141, 141);
+}
+.arabicFont .Languages > .english button {
+    background-color: rgb(0, 64, 64);
+}
+
+.Languages > .english button{
+    font-family: 'M PLUS Code Latin', monospace;
+    background-color: rgb(0, 141, 141);
+    height: 40px;
+    width: 80px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
 
 .DarkMode > p {
     margin: 0;
 }
 
-.DarkMode > p > a {
+.DarkMode > p {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
     border-radius: 50%; 
+    cursor: pointer;
     transition: 0.5s;
 
     display: flex;
@@ -130,6 +155,6 @@ ul {
     align-items: center;
 }
 
-.DarkMode > p > a:hover {
+.DarkMode > p:hover {
     color: rgb(108, 218, 255);
 }

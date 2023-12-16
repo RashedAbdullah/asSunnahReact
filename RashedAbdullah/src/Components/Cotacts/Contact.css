@@ -1,6 +1,8 @@
 /* font-family: 'M PLUS Code Latin', monospace; */
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;300;400&display=swap');
 
+/* font-family: 'Cairo', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
 .mainContactBox {
     background-color: #ffffff;
@@ -10,6 +12,11 @@
     font-family: 'M PLUS Code Latin', monospace;
     color: white;
     height: 110vh;
+}
+
+.arabicFont .mainContactBox {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
 }
 
 .formAndConcatBox {
@@ -22,7 +29,11 @@
 .contactHeadline {
     font-size: 1.8rem;
     text-align: center;
-    padding: 70px;
+    padding: 70px 0 30px 0;
+}
+
+.arabicFont .contactHeadline {
+    font-size: 22px;
 }
 
 .formbox {
@@ -44,8 +55,11 @@
     font-size: 1rem;
     width: 90%;
     transition: 0.3s;
+}
 
-    
+.arabicFont .formbox input {
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
 }
 
 .formbox input:focus {
@@ -95,6 +109,11 @@ input::-webkit-inner-spin-button {
     font-size: 18px;
 }
 
+.arabicFont .formbox div button {
+    font-family: 'Aref Ruqaa', serif; 
+    font-size: 15px;
+}
+
 
 .ContactBox {
     background-color: #252525;
@@ -108,6 +127,10 @@ input::-webkit-inner-spin-button {
     width: 400px;
     font-size: 18px;
     transition: 0.5s;
+}
+
+.arabicFont .ContactBox {
+    direction: ltr;
 }
 
 .ContactBox:hover {

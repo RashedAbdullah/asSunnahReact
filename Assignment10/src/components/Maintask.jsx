@@ -9,6 +9,10 @@ import Title from './Title';
 const Maintask = () => {
 
     const [state, dispatch] = useReducer(taskReducer, initialState);
+    
+    useEffect(()=>{
+        localStorage.setItem("allTasks", JSON.stringify(state.allTasks))
+    },[state]);
 
     const taskDispatches = {
         allTasks: state.allTasks,
@@ -23,9 +27,6 @@ const Maintask = () => {
         }
     }
     
-    useEffect(()=>{
-        localStorage.setItem("allTasks", JSON.stringify(state.allTasks))
-    },[state.allTasks]);
 
   return (
     <taskContext.Provider value={ taskDispatches }>

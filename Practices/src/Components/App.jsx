@@ -1,4 +1,4 @@
-
+import './CSS.css';
 import FormData from './FormData/FormData';
 import Tasbeeh from './Tasbeeh/Tasbeeh';
 import FetchData from './FullQuran/FetchData';
@@ -16,6 +16,11 @@ import Reduces from './useReduce/Reduces';
 import Context from './Contexts/Context';
 import ReducePractice from './ReducePractice/ReducePractice';
 import Game from './Tic-tac/tikTac';
+import Memo from './memo/Memo';
+// import UseCallback from './useCallBack/UseCallback';
+import Usememo from './UseMemo/Usememo';
+import FormObj from './formObj/FormObj';
+
 
 function App() {
 
@@ -39,8 +44,12 @@ function App() {
       {/* <Reduces /> */}
       {/* <Context /> */}
       {/* <ReducePractice /> */}
+      {/* <Game /> */}
+      {/* <Memo /> */}
+      {/* <UseCallback /> */}
+      {/* <Usememo /> */}
 
-      <Game />
+      <FormObj />
     </div>
   )
 }

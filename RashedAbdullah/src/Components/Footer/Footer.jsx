@@ -5,9 +5,13 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 const Footer = () => {
+
+    const { t } = useTranslation();
+    console.log(t)
   return (
     <div className='footerMainDiv'>
         <footer>
@@ -21,15 +25,15 @@ const Footer = () => {
             </div>
             <div className='footerNavLinks'>
                 <ul>
-                    <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/project">Projects</NavLink></li>
-                    <li><NavLink to="/blog">Blogs</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li>
-                    <li><NavLink to="/about">About</NavLink></li>
+                    <li><NavLink to="/">{t("home")}</NavLink></li>
+                    <li><NavLink to="/project">{t("projects")}</NavLink></li>
+                    <li><NavLink to="/blog">{t("blogs")}</NavLink></li>
+                    <li><NavLink to="/contact">{t("contact")}</NavLink></li>
+                    <li><NavLink to="/about">{t("about")}</NavLink></li>
                 </ul>
             </div>
             <div className='subFooter'>
-                <p>Copyright  &copy;2023 reserved by Rashed Abdullah</p>
+                <p>{t("subFooter")}</p>
             </div>
         </footer>
     </div>

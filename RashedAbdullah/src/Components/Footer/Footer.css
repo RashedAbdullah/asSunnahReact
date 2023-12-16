@@ -35,7 +35,7 @@ footer {
     margin: 0;
 }
 
-.footerNavLinks > ul > li {
+.footerNavLinks > ul > li a{
     list-style: none;
     color: rgba(255, 255, 255, 0.749);
     cursor: pointer;
@@ -45,7 +45,11 @@ footer {
     font-family: 'M PLUS Code Latin', monospace;
 }
 
-.footerNavLinks > ul > li:hover {
+.arabicFont .footerNavLinks > ul > li a {
+    font-family: 'Aref Ruqaa', serif;
+}
+
+.footerNavLinks > ul > li > a:hover {
     background-color: rgba(240, 248, 255, 0.072);
 }
 
@@ -56,6 +60,10 @@ footer {
     align-items: center;
     gap: 50px;
     margin: 0;
+}
+
+.arabicFont .footerNavLinks {
+    direction: rtl;
 }
 
 .footerSocialLinks > ul > li {
@@ -91,4 +99,10 @@ footer > .subFooter {
     margin: 0;
     font-size: 13px;
     font-weight: 200;
+}
+
+.arabicFont .subFooter > p {
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 15px;
+    font-weight: normal;
 }

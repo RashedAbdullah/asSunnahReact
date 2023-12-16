@@ -1,16 +1,19 @@
 import React from 'react';
 import './About.css';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+
+  const { t } = useTranslation();
   return (
     <div className='mainAboutDiv'>
       <div className='aboutBox'>
-        <h2>About me</h2>
-        <p>Greetings! I'm Abdul Ahad Rashed, a passionate frontend developer with a keen focus on creating engaging and responsive web experiences. I specialize in crafting dynamic user interfaces using <span>JavaScript and React.js.</span></p>
+        <h2>{t("aboutMe")}</h2>
+        <p>{t("underAbout")}  <span>{t("js")}</span> {t("and")} <span>{t("react")}</span></p>
 
-        <h3>Who Am I ?</h3>
-        <p>I am not just a coder; I am a storyteller who weaves narratives through lines of code. With a background in both creativity and technology, I merge design aesthetics with functionality to bring digital visions to life.</p>
-        <div><button>Know more</button></div>
+        <h3>{t("whoIAm")}</h3>
+        <p>{t("underWhoIam")}</p>
+        <div><button>{t("knowMoreBtn")}</button></div>
       </div>
     </div>
   )
