@@ -1,3 +1,4 @@
+import './css/MainCSS.css';
 import Header from "./Components/Navbar/Navbar"
 import Hero1 from './Components/HeroArea/Hero1';
 import Footer from './Components/Footer/Footer';

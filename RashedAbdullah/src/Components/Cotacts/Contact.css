@@ -5,12 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
 .mainContactBox {
-    background-color: #ffffff;
-    opacity: 1;
-    background-size: 5px 5px;
-    background-image: repeating-linear-gradient(45deg, #121212 0, #121212 0.5px, #151515 0, #110303 50%);
     font-family: 'M PLUS Code Latin', monospace;
-    color: white;
     height: 110vh;
 }
 

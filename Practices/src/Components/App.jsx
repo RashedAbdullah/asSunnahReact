@@ -20,6 +20,8 @@ import Memo from './memo/Memo';
 // import UseCallback from './useCallBack/UseCallback';
 import Usememo from './UseMemo/Usememo';
 import FormObj from './formObj/FormObj';
+import AxiosData from './axios/AxiosData';
+import FlatMap from './flatMap/FlatMap';
 
 
 function App() {
@@ -48,8 +50,9 @@ function App() {
       {/* <Memo /> */}
       {/* <UseCallback /> */}
       {/* <Usememo /> */}
-
-      <FormObj />
+      {/* <FormObj /> */}
+      {/* <AxiosData /> */}
+      <FlatMap/>
     </div>
   )
 }

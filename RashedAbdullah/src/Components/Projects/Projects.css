@@ -7,10 +7,6 @@
 
 .projectsMainDiv1 {
     font-family: 'M PLUS Code Latin', monospace;
-    background-color: #1e1e1e;
-    opacity: 1;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #1e1e1e 4px ), repeating-linear-gradient( #12121255, #121212 );
-    color: white;
     padding: 50px; 
 }
 
@@ -42,14 +38,15 @@
 .projectsMainDiv2 > .ProjectCard {
     padding: 30px;
     height: 400px;
-    background-color: #212121;
+    background-color: #0f0d0d;
     border-radius: 10px;
     margin-top: 20px;
+    cursor: none;
     transition: 0.5s;
 }
 
 .projectsMainDiv2 > .ProjectCard:hover {
-    background-color: #333333;
+    background-color: #191717;
 }
 
 .ProjectsDetailsBox {

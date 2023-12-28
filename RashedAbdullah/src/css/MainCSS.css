@@ -1,0 +1,16 @@
+/* font-family: 'M PLUS Code Latin', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #444cf7, #121212), repeating-radial-gradient(circle at center center, #444cf7, #444cf7, 4px, transparent 8px, transparent 4px);
+    background-blend-mode: multiply;
+    color: white;
+}

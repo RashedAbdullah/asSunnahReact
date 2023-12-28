@@ -1,50 +1,76 @@
 /* font-family: 'M PLUS Code Latin', monospace; */
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200;300;400&display=swap');
 
-
-.skillsMainDiv {
-    background-color: #212121;
+.mainSkillDiv {
     font-family: 'M PLUS Code Latin', monospace;
-    color: white;
+    height: 100vh;
 }
 
-.skillsHeadDiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.skillsHeadDiv h2 {
-    margin: 0;
+.skillHead {
     text-align: center;
-    padding: 20px 0;
-    border-bottom: 1px solid white;
 }
 
-.skillsItemsDiv {
-    padding: 20px;
-    background-color: rgb(0, 31, 31);
-    border-radius: 30px;
+.skillsDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
-.React-js p {
-    margin: 0;
+.singleSkills {
+    width: 300px;
 }
 
-.React-js .bgColor{
-    height: 8px;
-    width: 100%;
-    background-color: #555555;
-    border-radius: 10px;
+.singleSkills > div {
+    height: 20px;
+    margin: 5px 0;
 }
 
-.bgColor .mainColor {
-    height: 100%;
-    width: 60%;
+.developmentSkills > p {
+    text-align: end;
+    font-size: 25px;
+}
+.otherSkills > p {
+    font-size: 25px;
+}
+
+.React, .javascript, .css, .html {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 13px;
+}
+
+.React .reactSkill {
+    width: 70%;
+    height: 13px;
+    margin-left: 5px;
     background-color: aqua;
-    border-radius: 10px;
 }
 
-.mainColor2 {
-    width: 50%;
+
+.javascript .jsSkill {
+    width: 60%;
+    height: 13px;
+    background-color: aqua;
+}
+
+.jsSkill2 {
+    width: 40%;
+    height: 13px;
+    background-color: rgb(0, 86, 86);
+}
+
+.css .cssSkill {
+    width: 75%;
+    height: 13px;
+    margin-left: 5px;
+    background-color: aqua;
+}
+
+.html .htmlSkill {
+    width: 80%;
+    height: 13px;
+    margin-left: 5px;
+    background-color: aqua;
 }
