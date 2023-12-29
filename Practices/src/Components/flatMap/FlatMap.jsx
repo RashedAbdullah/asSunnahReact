@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const FlatMap = () => {
   const flating = [
     [1, 2, 3, 4, 5],
@@ -29,6 +30,11 @@ const FlatMap = () => {
   let course = "fabulous";
 
   course ? console.log("the course is true") : console.log("course is false");
+  
+
+  return (
+    <div>flat and flatMap</div>
+  )
 };
 
 export default FlatMap;

@@ -22,6 +22,7 @@ import Usememo from './UseMemo/Usememo';
 import FormObj from './formObj/FormObj';
 import AxiosData from './axios/AxiosData';
 import FlatMap from './flatMap/FlatMap';
+import CustomID from './customID/CustomID';
 
 
 function App() {
@@ -52,7 +53,8 @@ function App() {
       {/* <Usememo /> */}
       {/* <FormObj /> */}
       {/* <AxiosData /> */}
-      <FlatMap/>
+      {/* <FlatMap/> */}
+      <CustomID/>
     </div>
   )
 }
