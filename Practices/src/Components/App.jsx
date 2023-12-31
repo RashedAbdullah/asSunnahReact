@@ -23,13 +23,11 @@ import FormObj from './formObj/FormObj';
 import AxiosData from './axios/AxiosData';
 import FlatMap from './flatMap/FlatMap';
 import CustomID from './customID/CustomID';
-import LightAndDark from '../lightAndDark/LightAndDark';
+import LightAndDark from './lightAndDark/LightAndDark';
+import States from './states/States';
 
 
 function App() {
-
-
-
 
   return (
     <div>
@@ -56,7 +54,8 @@ function App() {
       {/* <AxiosData /> */}
       {/* <FlatMap/> */}
       {/* <CustomID/> */}
-      <LightAndDark/>
+      {/* <LightAndDark /> */}
+      <States />
     </div>
   )
 }

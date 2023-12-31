@@ -11,7 +11,23 @@ const LightAndDark = () => {
         backgroundColor: isDark ? dark.backgroundColor : light.backgroundColor,
       }}
     >
-      <button onClick={() => setDark(!isDark)}>Ligh and Dark</button>
+      <button
+        style={{
+          cursor: "pointer",
+          color: isDark ? dark.color : light.color,
+          backgroundColor: isDark
+            ? dark.backgroundColor
+            : light.backgroundColor,
+          border: "1px solid green",
+          outline: "none",
+          padding: "10px",
+          borderRadius: "6px",
+          margin: "10px 0 10px 43%",
+        }}
+        onClick={() => setDark(!isDark)}
+      >
+        Ligh and Dark
+      </button>
       <h2 style={{ textAlign: "center", paddingTop: "30px", fontSize: "30px" }}>
         This is light and dark mode theme
       </h2>
