@@ -1,43 +1,41 @@
 import React, { Fragment, useState } from "react";
-import { useAuthState } from "react-firebase-hooks/auth";
-// import { allAuths } from "../config/firebase.config";
-import { NavLink, useNavigate } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { signOut } from "firebase/auth";
 import { FaUserAstronaut } from "react-icons/fa";
 import Swal from "sweetalert2";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { bookingAuth } from "../auth/firebase.config";
+import { signOut } from "firebase/auth";
 
 const AuthUserDetails = () => {
-
-    const navigate = useNavigate();
-    const [showUserProfile, setShowUserProfile] = useState(false);
-    const [user] = useAuthState(allAuths);
-
-    const signOutHandle = () => {
-        setShowUserProfile(!showUserProfile);
-        // signOut(allAuths);
-        Swal.fire({
-          title: "Signed out",
-          icon: "info",
-        }).then(() => {});
-        navigate("/");
-      };
+  const [showUserProfile, setShowUserProfile] = useState(false);
+  const [user] = useAuthState(bookingAuth);
+  const navigate = useNavigate();
+  const signOutHandle = () => {
+    setShowUserProfile(!showUserProfile);
+    signOut(bookingAuth);
+    Swal.fire({
+      title: "Signed out",
+      icon: "info",
+    });
+    navigate("/");
+  };
   return (
     <>
-      <div className="ml-auto flex items-center">
+      <div className="flex items-center">
         {/* User profile or sign in page */}
         <div className="ml-4 flow-root lg:ml-6 justify-center">
           {user ? (
-            <div className=" cursor-pointer flex align-middle ">
+            <div className="flex align-middle ">
               <p className="mr-3 mt-2">{user?.displayName}</p>
               <div onClick={() => setShowUserProfile(!showUserProfile)}>
                 {user?.photoURL ? (
                   <img
-                    className="h-[35px] w-[35px] rounded-full"
+                    className="h-[35px] w-[35px] rounded-full cursor-pointer"
                     src={user?.photoURL}
-                    alt=""
+                    alt="user profile"
                   />
                 ) : (
                   <FaUserAstronaut size="25px" />
@@ -98,7 +96,7 @@ const AuthUserDetails = () => {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6 text-center">
                   <div className="flow-root">
                     <NavLink
-                      to="/userProfile"
+                      to="/user_profile"
                       onClick={() => setShowUserProfile(false)}
                       className="-m-2 block p-2 font-medium text-white w-60 hover:bg-teal-950 transition "
                     >
